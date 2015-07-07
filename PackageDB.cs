@@ -1,3 +1,4 @@
+
 // OOSD Workshop 2 - Travel Experts
 // July 6, 2015
 //Written by Darya Ostapenko
@@ -170,10 +171,14 @@ namespace TravelExpertsData
                 insertCommand.ExecuteNonQuery(); //Executes a Transact-SQL statement 
                 string selectStatement =
                     "SELECT IDENT_CURRENT('Packages') FROM Packages";
+                //Returns the last identity value generated for a specified table or view.
                 SqlCommand selectCommand =
                    new SqlCommand(selectStatement, connection);
                 int packageId = Convert.ToInt32(selectCommand.ExecuteScalar());
-                return packageId;
+                //Executes the query, and returns the first column of the first row in the result set returned by the query. 
+                //assigns that to the packageId
+
+                return packageId; //return the new packageId generated for new package
             }
             catch (SqlException ex)
             {
@@ -226,11 +231,10 @@ namespace TravelExpertsData
             }
         }//end of delete method
 
-        public static List<List<string>> GetProductsAndSuppliers(int packageId)
+        public static List<string> GetProductsAndSuppliers(int packageId)
         {
 
-            List<List<string>> matrix = new List<List<string>>();
-            List<string> row = new List<string>();
+            List<string> listOfProdSup = new List<string>();
 
             // establish a connection with the database
             SqlConnection connection = TravelExpertsDB.GetConnection();
@@ -263,10 +267,10 @@ namespace TravelExpertsData
                     Supplier supplier = new Supplier();
                     supplier.SupName = reader["SupName"].ToString();
 
-                    matrix.Add(new List<string> { product.ProdName, supplier.SupName });
+                    listOfProdSup.Add(product.ProdName + "," + supplier.SupName);
 
                 }
-                return matrix;
+                return listOfProdSup;
             }
             catch (SqlException ex)
             {
