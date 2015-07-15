@@ -331,5 +331,46 @@ public static bool AddProduct(int packageId, int productId, int supplierId)
             }
 
         }//end of AddProduct method
+        
+        public static bool DeleteProduct(int packageId, int prodSuppId)
+        {
+            SqlConnection connection = TravelExpertsDB.GetConnection();
+            string deleteStatement =
+
+                //insert statement
+                "DELETE FROM Packages_Products_Suppliers " +
+                "WHERE PackageId =@PackageId and ProductSupplierId =@ProductSupplierId";
+
+            // SqL INSERT query saved in a string
+            SqlCommand deleteCommand = new SqlCommand(deleteStatement, connection);
+
+            //create and add values to parameters of the SqlCommand object (insertCommand)
+            deleteCommand.Parameters.AddWithValue(
+                "@PackageId", packageId);
+            deleteCommand.Parameters.AddWithValue(
+                "@ProductSupplierId", prodSuppId);
+
+            try
+            {
+                connection.Open();
+                //Execute the Transact-SQL statement 
+                int count = deleteCommand.ExecuteNonQuery();//returns number of rows affected to count
+                if (count > 0) //if count is more than zero, means query was successful, return true to calling method
+                    return true;
+                else // if now rows were affected, return false to calling method
+                    //this will go back to frmAddModifyPackage and display an error message that
+                    //another user has modified row in the meantime
+                    return false;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }//end of DeleteProduct method
     }
 }
