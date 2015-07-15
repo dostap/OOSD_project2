@@ -282,5 +282,54 @@ namespace TravelExpertsData
             }
         }
 
+public static bool AddProduct(int packageId, int productId, int supplierId)
+        {
+            SqlConnection connection = TravelExpertsDB.GetConnection();
+            string insertStatement =
+                
+                //insert statement
+                "INSERT INTO Packages_Products_Suppliers " +
+                "VALUES (@PackageId, " +
+                "( " +
+                //subquery finds the corresponding ProductSupplierId
+                //given the ProductId and SupplierID
+                "select ps.ProductSupplierId " +
+				"from Products_Suppliers ps " +
+				"where ps.ProductId=@ProductId and ps.SupplierId=@SupplierId) " +
+				")";
+
+            // SqL INSERT query saved in a string
+            SqlCommand insertCommand = new SqlCommand(insertStatement, connection);
+
+            //create and add values to parameters of the SqlCommand object (insertCommand)
+            insertCommand.Parameters.AddWithValue(
+                "@PackageId", packageId);
+            insertCommand.Parameters.AddWithValue(
+                "@ProductId", productId);
+            insertCommand.Parameters.AddWithValue(
+                "@SupplierId", supplierId);
+       
+            try
+            {
+                connection.Open();
+                 //Execute the Transact-SQL statement 
+                int count = insertCommand.ExecuteNonQuery();//returns number of rows affected to count
+                if (count > 0) //if count is more than zero, means query was successful, return true to calling emthod
+                    return true;
+                else // if now rows were affected, return false to calling method
+                    //this will go back to frmAddModifyPackage and display an error message that
+                    //another user has modified row in the meantime
+                    return false;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+        }//end of AddProduct method
     }
 }
