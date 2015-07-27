@@ -1,0 +1,169 @@
+﻿/* Author: (Terry) Soktheary Mao, Darya Ostapenko
+   Purpose: CSS styles for MainTheme page
+   Date: July 22, 2015 
+*/
+/*Body properties*/
+body {
+    
+
+	font-size: 1em;
+	font-family:"Arial";
+	margin:0;
+	padding:0;
+	color: #000000;
+	text-align:center;
+}
+
+/*header and footer properties*/
+header {
+	background-color: #0099cc;
+    border-bottom: 2px solid #057297;
+}
+
+footer {
+	color: white;
+	background-color: #0099cc;
+    
+}
+
+h1 {
+    border: 2px solid #057297;
+    /*background-color: #0099cc;*/
+    background-color: rgba(12,162,221,.7);
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
+
+h2 {
+    /*border: 2px solid #FFFFFF;*/
+    color: #FFFFFF;
+    background-color: #000000;
+    display: inline-block;    
+    padding: 5px 5px 5px 5px;
+}
+
+h4 {
+    border: 2px solid #057297;
+   background-color: rgba(12,162,221,.7);
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
+
+/*Login page table*/
+#tblLogin {
+    border: 2px solid #057297;
+}
+
+/*ASP dropdown controls*/
+.list {
+    border: 2px solid #0099cc;
+    background-color: #FFFFFF;
+}
+.list:hover {
+    background-color: #076280;
+}
+.list:active {
+    background-color: #FFFFFF;
+}
+
+/*ASP formview controls*/
+.list2 {
+    border: 2px solid #0099cc;
+    background-color: #FFFFFF;
+}
+
+/*Asp Text box entry controls*/
+.entry {
+    border: 2px double #0099cc;
+    width: 12em;
+}
+
+/* ASP button controls*/
+.button {
+    /*color: black;
+    border: 2px solid #0099cc;
+    background-color: #FFFFFF;*/
+
+    border: 1px solid #0a3c59;
+   background: #55c5d4;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2999e3), to(#55c5d4));
+   background: -webkit-linear-gradient(top, #2999e3, #55c5d4);
+   background: -moz-linear-gradient(top, #2999e3, #55c5d4);
+   background: -ms-linear-gradient(top, #2999e3, #55c5d4);
+   background: -o-linear-gradient(top, #2999e3, #55c5d4);
+   background-image: -ms-linear-gradient(top, #2999e3 0%, #55c5d4 100%);
+   padding: 7px 14px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #99cff0 0 1px 0;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-bottom:1%;
+   font-weight: bold;
+}
+.button:hover {
+    /*background-color: #076280;*/
+
+    border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #248066;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65d692), to(#248066));
+   background: -webkit-linear-gradient(top, #65d692, #248066);
+   background: -moz-linear-gradient(top, #65d692, #248066);
+   background: -ms-linear-gradient(top, #65d692, #248066);
+   background: -o-linear-gradient(top, #65d692, #248066);
+   background-image: -ms-linear-gradient(top, #65d692 0%, #248066 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+}
+.button:active{
+    /*background-color: #07973d;*/
+
+    text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#248066));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+}
+
+/*Navigation Controls Color/Skin layout*/
+#btnPackageInformation, #btnCustomerInformation, #btnHome, 
+#btnLogin, #btnRegistration, #btnAbout, #btnContacts {
+    border: 2px solid #057297;
+    background-color: #0d83aa;
+    color: #FFFFFF;
+    display: inline-block;
+}
+#btnPackageInformation:hover, #btnCustomerInformation:hover, 
+#btnHome:hover, #btnLogin:hover, #btnRegistration:hover, 
+#btnAbout:hover, #btnContacts:hover{
+    background-color: #2a2929;
+        
+}
+#btnPackageInformation:active, #btnCustomerInformation:active, 
+#btnHome:active, #btnLogin:active, #btnRegistration:active, 
+#btnAbout:active, #btnContacts:active {
+    background-color: #07973d;
+}
+#logo:hover {
+    background-color: rgba(8, 71, 102,.3);
+}
+
+

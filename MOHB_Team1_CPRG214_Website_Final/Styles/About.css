@@ -1,0 +1,42 @@
+﻿/* Author: Terry Mao, Darya Ostapenko 
+   Purpose: CSS styles for About page
+   Date: July 21, 2015 
+*/
+
+.auto-style1 {
+            width: 100%;
+            height: 397px;
+        }
+        .auto-style2 {
+            height: 179px;
+        }
+        .auto-style3 {
+            height: 179px;
+            width: 816px;
+        }
+        .auto-style4 {
+            width: 816px;
+        }
+
+#tblAbout {
+    background-color: rgba(255,255,255,.7);
+    border: 2px solid #0099cc;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+pre {
+    font-family: Arial;
+    /*color: #04475c;*/
+    font-weight: bold;
+    font-size: 20px;
+    color: #313131;
+}
+p {
+    font-family: Arial;
+    /*color: #04475c;*/
+    font-weight: bold;
+    font-size: 22px;
+    color: #313131;
+}

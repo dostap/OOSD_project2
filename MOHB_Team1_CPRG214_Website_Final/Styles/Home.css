@@ -1,0 +1,64 @@
+﻿/* Author: Terry Mao, Darya Ostapenko
+   Purpose: CSS styles for Home page
+   Date: July 21, 2015 
+*/
+h1 {
+    text-align: center;
+    margin-top:0;
+    margin-bottom: 3%;
+}
+
+h3 {
+    border: 2px solid #0099cc;
+    background-color: rgba(12,162,221,.4);
+    font-weight: bold;
+    color: #FFFFFF;
+    display: inline-block;
+}
+h3:hover {
+    background-color: rgba(8, 71, 102,.6);
+}
+
+#content1 {
+    display: inline-block;
+
+}
+#content2 {
+    display: inline-block;
+
+}
+#content3 {
+    display: inline-block;
+
+}
+#content4 {
+    display: inline-block;
+
+}
+
+.homeImg {
+    display:inline-block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #0099cc;
+}
+
+#homePage {
+    background-color: rgba(255,255,255, 0.7);
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding: 1%; 
+    padding-bottom: 6%;
+    padding-top:3%;
+    border: 2px solid #0099cc;
+}
+
+#topRow {
+    margin-bottom: 2%;
+}
+
+#bottomRow {
+
+}

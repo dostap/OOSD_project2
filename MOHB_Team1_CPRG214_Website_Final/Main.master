@@ -1,0 +1,74 @@
+﻿<%-- Author: (Terry) Soktheary Mao,  Darya Ostapenko
+     Purpose: Master page file that connects the two content pages;
+     includes header and footer; links to style sheet and favicon across all pages
+     Date: July 17, 2015--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="MasterPage" ClientIDMode ="Static"%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- Link to style sheet for master page, favicon-->
+<head runat="server">
+    <title>Welcome to Travel Experts</title>
+    <link href="Styles/Master.css" rel="stylesheet" />
+    <link rel="icon" href="Images/travelexperts.ico" />
+    <asp:ContentPlaceHolder id="headPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>   
+</head>
+<body id="main-body">
+<div id="main-content">
+    <form id="form1" runat="server">
+    <div>
+    <!-- header includes title across all pages linked to master page;
+        logo and title message; and navigation buttons;
+        should be fixed to top of page always -->
+    <header>
+        <div id="top-header">
+                <img src="Images/travelexperts.png" id="logo" />
+            <div id="main-navigation">
+                <asp:Button ID="btnHome" runat="server" PostBackUrl="~/Home.aspx" Text="Home" CausesValidation="False" />
+                <asp:Button ID="btnRegistration" runat="server" PostBackUrl="~/Registration.aspx" Text="Registration" CausesValidation="False" />
+                <asp:Button ID="btnCustomerInformation" runat="server" PostBackUrl="~/CustomerPackages.aspx" Text="Customer Information" CausesValidation="False" Visible="False" />
+                <asp:Button ID="btnPackageInformation" runat="server" Text="Vacation Packages" CausesValidation="False" PostBackUrl="~/VacationPackages.aspx" />
+                <asp:Button ID="btnAbout" runat="server" OnClick="btnLogin_Click" Text="About Us" CausesValidation="False" PostBackUrl="~/About.aspx" />
+                <asp:Button ID="btnContacts" runat="server" OnClick="btnLogin_Click" Text="Contact Us" CausesValidation="False" PostBackUrl="~/ContactsAgent.aspx" />
+                <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" CausesValidation="False" />
+                <br />
+                <div id="copyright">&copy; 2015, Travel Experts</div>
+            </div> 
+        </div>   
+        
+    </header>
+    <!-- Main section of the content goes here linked from all pages -->
+    <section>
+        <asp:ContentPlaceHolder id="formPlaceHolder" runat="server">   
+        </asp:ContentPlaceHolder>
+    </section>
+    <!-- footer includes a copyright and links to social media sites; 
+        should be fixed to bottom of page always -->
+    </div>
+        <!-- NOT INCLUDING FOOTER; HAD ISSUES WITH DISPLAYING WHOLE PAGE-->
+    <%--<footer>
+        <div id="bottom-footer">
+            <div id="copyright">
+            <p>&copy; 2015, Travel Experts</p>
+            </div>
+            <div id="social">
+                <br />
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img src="Images/facebook.png" id="facebook" width="25" height="25" />
+                </a>
+                <a target="_blank" href="https://twitter.com/">
+                    <img src="Images/twitter.png" id="twitter" width="25" height="25" />
+                </a>
+                <a target="_blank" href="https://plus.google.com/">
+                    <img src="Images/google.png" id="google" width="25" height="25" />
+                </a>
+            </div>
+        </div>
+    </footer>--%>
+    </form>
+</div>
+</body>
+</html>

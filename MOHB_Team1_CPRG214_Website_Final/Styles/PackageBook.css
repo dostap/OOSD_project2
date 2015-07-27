@@ -1,0 +1,23 @@
+﻿/*Author: (Terry) Soktheary Mao, Darya Ostapenko
+  Purpose: CSS styling of PackageBook page
+  Date: July 21, 2015
+*/
+
+
+#fvBooking {
+     background-color: rgba(255,255,255,.7);
+     padding: 5%;
+     font-size: 22px;
+     color: #313131;
+}
+.validator {
+    border: 2px solid #0099cc;
+    background-color: rgba(255,255,255,.7);
+    font-weight: bold;
+}
+#lblSaveStatus {
+    color: #41bc0d;
+    border: 2px solid #0099cc;
+    background-color: rgba(255,255,255,.7);
+    font-weight: bold;
+}

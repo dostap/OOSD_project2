@@ -1,0 +1,206 @@
+﻿/*
+    Date: July 18, 2015
+    Author: Darya Ostapenko
+    Project: OOSD Project 2
+    Usage: Styling of the Customer Packages page
+    
+    */
+#fvChangePassword {
+    background-color: rgba(255,255,255,.8);
+
+    padding: 5%;
+    font-size: 18px;
+
+
+}
+#lblPasswordChanged {
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid #0099cc;
+    font-size: 18px;
+}
+
+#containerInfo {
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid #0099cc;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    font-size: 18px;
+}
+body {
+    text-align: center;
+}
+
+h1{
+    text-align:center;
+    color: #008AE6;
+    margin-top:1%;
+}
+
+.h2Style {
+    text-align:left;
+    color: #008AE6;
+    margin-left:20%;
+    font-size: 24px;
+    font-family: Arial;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    font-weight: bold;
+}
+
+#labelTotalAmountProducts, #labelTotalAmountPackages {
+    margin-top: 1%;
+    margin-right:20%;
+    text-align: right;
+}
+
+
+
+#GridView1 td, th, #GridView2 td,th{
+     padding: 0.625em;
+     text-align: center;
+     text-decoration: none;
+     margin-bottom: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: #008AE6;
+    font-weight: bold;
+}
+
+    .rounded_corners
+    {
+        border: 0.0625em solid #0099cc;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        border-radius: 0.5em;
+        overflow: hidden;
+        
+    }
+    .rounded_corners td, .rounded_corners th
+    {
+        border: 0.0625em solid #0099cc;
+        font-family: Arial;
+        font-size: 1em;
+        text-align: center;
+    }
+    .rounded_corners table table td
+    {
+        border-style: none;
+    }
+
+
+#DetailsVIew1 {
+    padding:1%;
+}
+
+#btnLogin2 {
+   border: 1px solid #0a3c59;
+   background: #55c5d4;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2999e3), to(#55c5d4));
+   background: -webkit-linear-gradient(top, #2999e3, #55c5d4);
+   background: -moz-linear-gradient(top, #2999e3, #55c5d4);
+   background: -ms-linear-gradient(top, #2999e3, #55c5d4);
+   background: -o-linear-gradient(top, #2999e3, #55c5d4);
+   background-image: -ms-linear-gradient(top, #2999e3 0%, #55c5d4 100%);
+   padding: 7px 14px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #99cff0 0 1px 0;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-bottom:1%;
+   font-weight: bold;
+   }
+#btnLogin2:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #248066;
+   background: -webkit-gradient(linear, left top, left bottom, from(#65d692), to(#248066));
+   background: -webkit-linear-gradient(top, #65d692, #248066);
+   background: -moz-linear-gradient(top, #65d692, #248066);
+   background: -ms-linear-gradient(top, #65d692, #248066);
+   background: -o-linear-gradient(top, #65d692, #248066);
+   background-image: -ms-linear-gradient(top, #65d692 0%, #248066 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+   }
+#btnLogin2:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#248066));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+   }
+
+#btnRegister2 {
+   border: 1px solid #0a3c59;
+   background: #1d9599;
+   background: -webkit-gradient(linear, left top, left bottom, from(#4ab36b), to(#1d9599));
+   background: -webkit-linear-gradient(top, #4ab36b, #1d9599);
+   background: -moz-linear-gradient(top, #4ab36b, #1d9599);
+   background: -ms-linear-gradient(top, #4ab36b, #1d9599);
+   background: -o-linear-gradient(top, #4ab36b, #1d9599);
+   background-image: -ms-linear-gradient(top, #4ab36b 0%, #1d9599 100%);
+   padding: 7px 14px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #99cff0 0 1px 0;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   margin-bottom:1%;
+   font-weight: bold;
+   }
+#btnRegister2:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #48d4d4;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3278c2), to(#48d4d4));
+   background: -webkit-linear-gradient(top, #3278c2, #48d4d4);
+   background: -moz-linear-gradient(top, #3278c2, #48d4d4);
+   background: -ms-linear-gradient(top, #3278c2, #48d4d4);
+   background: -o-linear-gradient(top, #3278c2, #48d4d4);
+   background-image: -ms-linear-gradient(top, #3278c2 0%, #48d4d4 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+   }
+#btnRegister2:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #216b44;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5eb86b), to(#48d4d4));
+   background: -webkit-linear-gradient(top, #5eb86b, #216b44);
+   background: -moz-linear-gradient(top, #5eb86b, #216b44);
+   background: -ms-linear-gradient(top, #5eb86b, #216b44);
+   background: -o-linear-gradient(top, #5eb86b, #216b44);
+   background-image: -ms-linear-gradient(top, #5eb86b 0%, #216b44 100%);
+   color: #fff;
+   margin-bottom:1%;
+   font-weight: bold;
+   }

@@ -1,0 +1,33 @@
+﻿<%-- Author: (Terry) Soktheary Mao, Darya Ostapenko
+     Purpose: Skin controls for asp selectors
+     Date: July 22, 2015 
+--%>
+
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%-- asp:content reference for fall skin --%>
+<asp:Button runat="server" CssClass="button" /> 
+<asp:TextBox runat="server" CssClass="entry"></asp:TextBox>
+<asp:DropDownList runat="server" CssClass="list"></asp:DropDownList>
+<asp:FormView runat="server" CssClass="list2"></asp:FormView>
+<asp:Table runat="server" CssClass="table"></asp:Table>
+
+<asp:RequiredFieldValidator runat="server" CssClass="validator"></asp:RequiredFieldValidator>
+<asp:RangeValidator runat="server" CssClass="validator"></asp:RangeValidator>
+<asp:CompareValidator runat="server" CssClass="validator"></asp:CompareValidator>
+<asp:RegularExpressionValidator runat="server" CssClass="validator"></asp:RegularExpressionValidator>
+<asp:ValidationSummary runat="server" CssClass="validator"></asp:ValidationSummary>
